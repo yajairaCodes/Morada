@@ -1,0 +1,1125 @@
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+.alignright {
+	float: right;
+	padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+	float: left;
+	padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+     color: #000;
+     font-size: 12px;
+     line-height: 1.4;
+     font-family: Helvetica, Arial, sans-serif;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* Center the container */
+#container {
+	width: 960px;
+	margin: auto;
+}
+
+header {
+
+}
+
+footer {
+
+
+}
+
+              /*basic border declaration*/
+
+              /*height:
+              width: 100%;
+              border: 1px solid black;
+              margin:0% 0% 0% 0%;*/
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+body{
+    background-color: white;
+    width:900px;
+    height:900px;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 50px;
+  }
+
+  header{
+    height: 100px;
+    width: 100%;
+    background-color: white;
+    margin:0px;
+  }
+
+  #signin span{
+width: 110px;
+font-size: 25px;
+color: black;
+float: left;
+margin: 0px;
+font-family: monospace;
+  }
+
+
+
+  #barrowomen{
+    height: 46px;
+  width: 64px;
+  background-image: url(../QuesdillaImages/signin.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  float: left;
+  margin:0px;
+
+  }
+#logoimage{
+  height: 45px;
+  width: 50px;
+  background-image: url(../QuesdillaImages/logo.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  float: left;
+  border-radius: 10px 10px 10px 10px;
+  border-style: solid;
+  border-color: purple;
+  margin-left: 110px;
+  margin-right: 5px;
+  }
+h1{
+  width: 275px;
+height: 45px;
+color: white;
+font-size: 40px;
+margin: 0px;
+background-color: #835fa6;
+border-radius: 10px 10px 10px 10px;
+border-style: solid;
+border-color: purple;
+text-align: center;
+float: left;
+}
+
+#CountMeal span{
+  height:45px;
+  width:82px;
+font-size: 25px;
+color: black;
+float: right;
+    margin:0px;
+  font-family: monospace;
+}
+#mercadobag{
+  height: 46px;
+width: 64px;
+background-image: url(../QuesdillaImages/mercadobolsa.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+float: right;
+margin:0px;
+
+}
+
+/*end of header and begining of signupform*/
+.signUP_form{
+  display: inline-block;
+      height: 800px;
+      width: 85%;
+      background-color: #e8cee6;
+      font-size: 18px;
+      margin-left: 70px;
+      padding-left: 100px;
+      padding-right: 100px;
+      margin-top: 0px;
+      padding-top: 35px;
+}
+.signUP_form h3{
+  height: 30px;
+  width: 100%;
+  font-size: 25px;
+  color: cadetblue;
+  text-align: center;
+  font-weight: bolder;
+}
+
+.signUP_form label {
+  display: block;
+    font-weight: bolder;
+    height: 44px;
+    width: 100px;
+    color: black;
+    font-size: 20px;
+    float: left;
+    margin-left: 100px;
+   }
+    #FirstName{
+      display: block;
+        height: 50px;
+        width: 325px;
+    }
+    #LastName{
+      display: block;
+        height: 50px;
+        width: 325px;
+    }
+    #Email{
+      display: block;
+        height: 50px;
+        width: 325px;
+    }
+    #Phone{
+      display: block;
+        height: 50px;
+        width: 325px;
+    }
+    #Password{
+      display: block;
+        height: 50px;
+        width: 325px;
+    }
+    #RePassword{
+      display: block;
+        height: 50px;
+        width: 325px;
+    }
+    #passwordinfo{
+      font-size: 12px;
+          display: block;
+          text-align: center;
+          margin-bottom: 45px;
+          height: 25px;
+          width:100%;
+    }
+
+#createaccount{
+  display: block;
+      height: 60px;
+      width: 220px;
+      background-color: purple;
+      color: white;
+      font-size: 21px;
+      margin-bottom: 16px;
+      margin-top: 30px;
+      margin-left: 190px;
+}
+#policy{
+  font-size: 12px;
+      display: block;
+      text-align: center;
+      margin-bottom: 45px;
+      height: 25px;
+      width:100%;
+
+}
+/*end of sign up form begging of intake form*/
+#intakeform{
+    height: 500px;
+    width: 100%;
+}
+
+.tittle{
+display: block;
+height: 140px;
+width: 100%;
+background-color: rgba(0, 0, 0, 0.6);
+text-align: center;
+}
+.tittle h1{
+  text-align: center;
+  padding-top: 23px;
+  letter-spacing: 11pt;
+  word-spacing: 2pt;
+  font-size: 86px;
+  font-family: helvetica, sans-serif;
+  line-height: 1;
+  height: 40px;
+  width: 100%;
+  margin-top: 0px;
+  color: #af9bd8;
+  font-weight: bolder;
+  }
+
+
+.tittle h2{
+  font-size:30px;
+color:#6ec4d4;
+}
+
+.contactInfo{
+  height: 300px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.contactInfo label {
+  display: inline-block;
+      font-weight: bolder;
+      height: 5%;
+      width: 100px;
+      text-align: end;
+      color: lightcyan;
+      font-size: 20px;
+margin-top: 18px;
+    }
+.contactInfo input {
+  display: inline-block;
+      height: 28px;
+      width: 266px;
+      text-align: center;
+      color: darkblue;
+      font-size: 22px;
+}
+.deliveryintro input{
+  display: inline-block;
+      height: 28px;
+      width: 100px;
+      text-align: center;
+      color: darkblue;
+      font-size: 22px;
+}
+.deliveryintro span{
+  display: inline-block;
+  height: 28px;
+  width: 167px;
+  text-align: center;
+  color: lightcyan;
+  font-size: 25px;
+  margin-left: 125px;
+}
+
+.pickupinfo label {
+  display: inline-block;
+      font-weight: bolder;
+      height: 5%;
+      width: 100px;
+      text-align: end;
+      color: lightcyan;
+      font-size: 20px;
+margin-top: 18px;
+    }
+.pickupinfo input {
+  display: inline-block;
+      height: 28px;
+      width: 266px;
+      text-align: center;
+      color: darkblue;
+      font-size: 22px;
+}
+.Deliveryorder h4{
+  font-size:40px;
+color:#6ec4d4;
+}
+
+.extraoptions label{
+  display: inline-block;
+      font-weight: bolder;
+      height: 5%;
+      width: 100px;
+      text-align: end;
+      color: lightcyan;
+      font-size: 20px;
+margin-top: 18px;
+}
+
+
+.extraoptions input{
+  display: block;
+height: 4%;
+width: 4%;
+color: lightcyan;
+}
+/******************************************
+/Quesadillas
+/*******************************************/
+/*body{
+  background-image: url(../QuesdillaImages/inside.jpg);
+  background-size:cover;
+  background-repeat: no-repeat;
+    background-color: #9a649a;
+  }
+.completesection{
+  display: none;
+  height: 750px;
+  width: 50%;
+  border-radius: 4px;
+  border-style: solid;
+  border-color: navajowhite;
+  padding-left: 3%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.headline{
+  display: block;
+  height: 12%;
+  width: 90%;
+  background-color: #825d5d;
+  margin-top: 18px;
+}
+#quesadillaHeadline{
+  display: block;
+  height: 40%;
+  width: 40%;
+  font-size: 4.6em;
+  font-weight: bolder;
+  color: #e0a57a;
+  margin-top: 8px;
+  margin-bottom: 0px;
+  padding-top: 0px;
+  float: left;
+  padding-left: 29px;
+}
+#add{
+
+    display: block;
+    height: 67%;
+    width: 10%;
+    font-size: 3em;
+    background-color: mediumvioletred;
+    background-position: left;
+    font-weight: bolder;
+    text-align: -webkit-center;
+    color: white;
+    margin-top: -10%;
+    margin-right: 3%;
+    border: aliceblue;
+    border-style: solid;
+    border-radius: 64px;
+    float: right;
+
+}
+[contentEditable=true]:empty:not(:focus):before{
+    content:attr(data-text)
+}
+
+#subtract{
+
+    display: block;
+        height: 67%;
+        width: 10%;
+        font-size: 3em;
+        background-color: mediumvioletred;
+        background-position: left;
+        font-weight: bolder;
+        text-align: -webkit-center;
+        color: white;
+        margin-top: 2%;
+        margin-left: 20%;
+        border: aliceblue;
+        border-style: solid;
+        border-radius: 64px;
+        float: left;
+}
+#quantity{
+  display: block;
+height: 56%;
+width: 13%;
+font-size: 2.3em;
+border-radius: 3px;
+border-style: solid;
+border-color: navajowhite;
+padding-left: 3%;
+margin-top: -49px;
+margin-left: 72%;
+color: #f2dede;
+text-align: end;
+float: left;
+}
+#order1{
+  display: block;
+  height: 51%;
+  width: 100%;
+}
+h3{
+  display: block;
+  height: 10%;
+  width: 80%;
+  font-size: 1em;
+  margin: 0;
+  margin-top: 10px;
+  margin-left: 100px;
+}
+.quesadillaMenu{
+  display: block;
+  height:100%;
+  width:100%;
+  color: white;
+  font-size: 3em
+}
+label {
+  display: inline-block;
+      font-weight: bolder;
+      height: 5%;
+      width: 8%;
+      text-align: end;
+      color: lightcyan;
+      font-size: 20px;
+margin-top: 18px;
+    }
+input {
+  display: inline-block;
+height: 28px;
+width: 139px;
+text-align: end;
+color: lightcyan;
+}
+#totalPrice{
+  display: block;
+  height: 7%;
+  width: 21%;
+  font-size: 1em;
+  margin-top: 28%;
+  float: left;
+  }
+
+#calculatedPrice{
+  display: block;
+  height: 60px;
+  width: 15%;
+  font-size: 1em;
+  border-radius: 3px;
+  border-style: solid;
+  border-color: navajowhite;
+  padding-left: 3%;
+  color: brown;
+  text-align: center;
+  margin-top: 28%;
+      margin-left: 16%;
+}
+#submit{
+  display: block;
+      height: 8%;
+      width: 34%;
+      font-size: 1em;
+      background-color: mediumvioletred;
+      background-position: left;
+      font-weight: bolder;
+      text-align: -webkit-center;
+      color: wheat;
+      float: right;
+      margin-right: 8%;
+      margin-top: -14%;
+}*/
+
+
+/******************************************
+/* burritos
+/*******************************************/
+/*body{
+
+  background-image: url(../QuesdillaImages/inside.jpg);
+  background-size:cover;
+  background-repeat: no-repeat;
+    background-color: #9a649a;
+}
+.completesectionB{
+  display: none;
+  height: 750px;
+  width: 50%;
+  border-radius: 4px;
+  border-style: solid;
+  border-color: navajowhite;
+  padding-left: 3%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.headlineb{
+  display: block;
+  height: 12%;
+  width: 90%;
+  background-color: #825d5d;
+  margin-top: 18px;
+}
+#burritoHeadline{
+  display: block;
+  height: 40%;
+  width: 40%;
+  font-size: 5em;
+  font-weight: bolder;
+  color: #e0a57a;
+  margin-top: 8px;
+  margin-bottom: 0px;
+  padding-top: 0px;
+  float: left;
+  padding-left: 29px;
+}
+#addb{
+  display: block;
+  height: 67%;
+  width: 10%;
+  font-size: 3em;
+  background-color: mediumvioletred;
+  background-position: left;
+  font-weight: bolder;
+  text-align: -webkit-center;
+  color: white;
+  margin-top: -10%;
+  margin-right: 7%;
+  border: aliceblue;
+  border-style: solid;
+  border-radius: 64px;
+  float: right;
+
+}
+[contentEditable=true]:empty:not(:focus):before{
+    content:attr(data-text)
+}
+
+#subtractb{
+  display: block;
+      height: 67%;
+      width: 10%;
+      font-size: 3em;
+      background-color: mediumvioletred;
+      background-position: left;
+      font-weight: bolder;
+      text-align: -webkit-center;
+      color: white;
+      margin-top: 2%;
+      margin-left: 9%;
+      border: aliceblue;
+      border-style: solid;
+      border-radius: 64px;
+      float: left;
+}
+
+#quantityb{
+  display: block;
+height: 56%;
+width: 13%;
+font-size: 2.3em;
+border-radius: 3px;
+border-style: solid;
+border-color: navajowhite;
+padding-left: 3%;
+margin-top: -49px;
+margin-left: 64%;
+color: #f2dede;
+text-align: end;
+float: left;
+}
+#order1B{
+  display: block;
+  height: 51%;
+  width: 100%;
+}
+h3{
+  display: block;
+  height: 10%;
+  width: 80%;
+  font-size: 1em;
+  margin: 0;
+  margin-top: 10px;
+  margin-left: 100px;
+}
+.burritoMenu{
+  display: block;
+  height:92%;
+  width:100%;
+  color: white;
+  font-size: 3em
+}
+label {
+  display: inline-block;
+      font-weight: bolder;
+      height: 5%;
+      width: 8%;
+      text-align: end;
+      color: lightcyan;
+      font-size: 20px;
+margin-top: 18px;
+    }
+input {
+  display: inline-block;
+height: 28px;
+width: 139px;
+text-align: end;
+color: lightcyan;
+}
+#totalPriceb{
+  display: block;
+  height: 7%;
+  width: 21%;
+  font-size: 1em;
+  margin-top: 35%;
+  float: left;
+  }
+
+#calculatedPriceb{
+  display: block;
+  height: 60px;
+  width: 15%;
+  font-size: 1em;
+  border-radius: 3px;
+  border-style: solid;
+  border-color: navajowhite;
+  padding-left: 3%;
+  color: brown;
+  text-align: center;
+  margin-top: 33%;
+      margin-left: 16%;
+}
+#submitb{
+  display: block;
+      height: 8%;
+      width: 34%;
+      font-size: 1em;
+      background-color: mediumvioletred;
+      background-position: left;
+      font-weight: bolder;
+      text-align: -webkit-center;
+      color: wheat;
+      float: right;
+      margin-right: 8%;
+      margin-top: -14%;
+}*/
+/******************************************
+/* tacos
+/*******************************************/
+/*body{
+
+  background-image: url(../QuesdillaImages/inside.jpg);
+  background-size:cover;
+  background-repeat: no-repeat;
+    background-color: #9a649a;
+}
+.completesectionT{
+  display: none;
+  height: 700px;
+  width: 50%;
+  border-radius: 4px;
+  border-style: solid;
+  border-color: navajowhite;
+  padding-left: 3%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+#tacosHeadline{
+  display: block;
+  height: 13.1%;
+  width: 58%;
+  font-size: 5em;
+  background-color: mediumvioletred;
+  background-position: left;
+  font-weight: bolder;
+  text-align: -webkit-center;
+  color: darkslateblue;
+  padding-top: 9px;
+}
+#addt{
+  display: block;
+  height: 4%;
+  width: 15%;
+  font-size: 2em;
+  background-color: mediumvioletred;
+  background-position: left;
+  font-weight: bolder;
+  text-align: -webkit-center;
+  color: darkslateblue;
+  margin-top: -23%;
+  margin-left: 58%;
+
+}
+[contentEditable=true]:empty:not(:focus):before{
+    content:attr(data-text)
+}
+
+#subtractt{
+  display: block;
+height: 4%;
+width: 15%;
+font-size: 2em;
+backgroun9d-color: mediumvioletred;
+background-position: left;
+font-weight: bolder;
+text-align: -webkit-center;
+color: darkslateblue;
+margin-top: 0%;
+margin-left: 58%;
+}
+#quantityt{
+  display: block;
+    height: 6%;
+    width: 15%;
+    font-size: 2em;
+    border-radius: 3px;
+    border-style: solid;
+    border-color: navajowhite;
+    padding-left: 3%;
+    margin-left: 58%;
+    color: brown;
+    text-align: center;
+}
+.tacosMenu{
+  display: block;
+  height:100%;
+  width:100%;
+  color: white;
+  font-size: 3em
+}
+label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 700;
+    height: 4%;
+    width: 23%;
+    text-align: end;
+    color: lightcyan;
+}
+input {
+    display: inline-block;
+    font-weight: 700;
+  height: 4%;
+  width: 4%;
+  text-align: end;
+  color: lightcyan;
+}
+#totalPricet{
+  display: block;
+  height: 7%;
+  width: 21%;
+  font-size: 1em;
+  margin-top: 6%;
+  float: left;
+  }
+
+#calculatedPricet{
+  display: block;
+  height: 60px;
+  width: 15%;
+  font-size: 1em;
+  border-radius: 3px;
+  border-style: solid;
+  border-color: navajowhite;
+  padding-left: 3%;
+  color: brown;
+  text-align: center;
+  margin-top: 5%;
+      margin-left: 16%;
+}
+#submitt{
+  display: block;
+      height: 8%;
+      width: 34%;
+      font-size: 1em;
+      background-color: mediumvioletred;
+      background-position: left;
+      font-weight: bolder;
+      text-align: -webkit-center;
+      color: darkslateblue;
+      float: right;
+      margin-right: 8%;
+      margin-top: 0%;
+}*/
+/******************************************
+/* nachos
+/*******************************************/
+/*body{
+
+  background-image: url(../QuesdillaImages/inside.jpg);
+  background-size:cover;
+  background-repeat: no-repeat;
+    background-color: #9a649a;
+}
+.completesectionn{
+  display: none;
+  height: 700px;
+  width: 50%;
+  border-radius: 4px;
+  border-style: solid;
+  border-color: navajowhite;
+  padding-left: 3%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+#nachosHeadline{
+  display: block;
+  height: 13.1%;
+  width: 58%;
+  font-size: 5em;
+  background-color: mediumvioletred;
+  background-position: left;
+  font-weight: bolder;
+  text-align: -webkit-center;
+  color: darkslateblue;
+  padding-top: 9px;
+}
+#addn{
+  display: block;
+  height: 4%;
+  width: 15%;
+  font-size: 2em;
+  background-color: mediumvioletred;
+  background-position: left;
+  font-weight: bolder;
+  text-align: -webkit-center;
+  color: darkslateblue;
+  margin-top: -23%;
+  margin-left: 58%;
+
+}
+[contentEditable=true]:empty:not(:focus):before{
+    content:attr(data-text)
+}
+
+#subtractn{
+  display: block;
+height: 4%;
+width: 15%;
+font-size: 2em;
+background-color: mediumvioletred;
+background-position: left;
+font-weight: bolder;
+text-align: -webkit-center;
+color: darkslateblue;
+margin-top: 0%;
+margin-left: 58%;
+}
+#quantityn{
+  display: block;
+    height: 6%;
+    width: 15%;
+    font-size: 2em;
+    border-radius: 3px;
+    border-style: solid;
+    border-color: navajowhite;
+    padding-left: 3%;
+    margin-left: 58%;
+    color: brown;
+    text-align: center;
+}
+.nachoMenu{
+  display: block;
+  height:100%;
+  width:100%;
+  color: white;
+  font-size: 3em
+}
+label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 700;
+    height: 4%;
+    width: 23%;
+    text-align: end;
+    color: lightcyan;
+}
+input {
+    display: inline-block;
+    font-weight: 700;
+  height: 4%;
+  width: 4%;
+  text-align: end;
+  color: lightcyan;
+}
+#totalPricen{
+  display: block;
+  height: 7%;
+  width: 21%;
+  font-size: 1em;
+  margin-top: 6%;
+  float: left;
+  }
+
+#calculatedPrice{
+  display: block;
+  height: 60px;
+  width: 15%;
+  font-size: 1em;
+  border-radius: 3px;
+  border-style: solid;
+  border-color: navajowhite;
+  padding-left: 3%;
+  color: brown;
+  text-align: center;
+  margin-top: 5%;
+      margin-left: 16%;
+}
+#submitn{
+  display: block;
+      height: 8%;
+      width: 34%;
+      font-size: 1em;
+      background-color: mediumvioletred;
+      background-position: left;
+      font-weight: bolder;
+      text-align: -webkit-center;
+      color: darkslateblue;
+      float: right;
+      margin-right: 8%;
+      margin-top: 0%;
+}*/
+/******************************************
+/* drinks
+/*******************************************/
+/*body{
+
+  background-image: url(../QuesdillaImages/inside.jpg);
+  background-size:cover;
+  background-repeat: no-repeat;
+    background-color: #9a649a;
+}
+.completesectiond{
+  display: none;
+  height: 700px;
+  width: 50%;
+  border-radius: 4px;
+  border-style: solid;
+  border-color: navajowhite;
+  padding-left: 3%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+#drinksHeadline{
+  display: block;
+  height: 13.1%;
+  width: 58%;
+  font-size: 5em;
+  background-color: mediumvioletred;
+  background-position: left;
+  font-weight: bolder;
+  text-align: -webkit-center;
+  color: darkslateblue;
+  padding-top: 9px;
+}
+#addd{
+  display: block;
+  height: 4%;
+  width: 15%;
+  font-size: 2em;
+  background-color: mediumvioletred;
+  background-position: left;
+  font-weight: bolder;
+  text-align: -webkit-center;
+  color: darkslateblue;
+  margin-top: -23%;
+  margin-left: 58%;
+
+}
+[contentEditable=true]:empty:not(:focus):before{
+    content:attr(data-text)
+}
+
+#subtractd{
+  display: block;
+height: 4%;
+width: 15%;
+font-size: 2em;
+background-color: mediumvioletred;
+background-position: left;
+font-weight: bolder;
+text-align: -webkit-center;
+color: darkslateblue;
+margin-top: 0%;
+margin-left: 58%;
+}
+#quantityd{
+  display: block;
+    height: 6%;
+    width: 15%;
+    font-size: 2em;
+    border-radius: 3px;
+    border-style: solid;
+    border-color: navajowhite;
+    padding-left: 3%;
+    margin-left: 58%;
+    color: brown;
+    text-align: center;
+}
+.drinksMenu{
+  display: block;
+  height:100%;
+  width:100%;
+  color: white;
+  font-size: 3em
+}
+label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 700;
+    height: 4%;
+    width: 23%;
+    text-align: end;
+    color: lightcyan;
+}
+input {
+    display: inline-block;
+    font-weight: 700;
+  height: 4%;
+  width: 4%;
+  text-align: end;
+  color: lightcyan;
+}
+#totalPrice{
+  display: block;
+  height: 7%;
+  width: 21%;
+  font-size: 1em;
+  margin-top: 6%;
+  float: left;
+  }
+
+#calculatedPrice{
+  display: block;
+  height: 60px;
+  width: 15%;
+  font-size: 1em;
+  border-radius: 3px;
+  border-style: solid;
+  border-color: navajowhite;
+  padding-left: 3%;
+  color: brown;
+  text-align: center;
+  margin-top: 5%;
+      margin-left: 16%;
+}
+#submit{
+  display: block;
+      height: 8%;
+      width: 34%;
+      font-size: 1em;
+      background-color: mediumvioletred;
+      background-position: left;
+      font-weight: bolder;
+      text-align: -webkit-center;
+      color: darkslateblue;
+      float: right;
+      margin-right: 8%;
+      margin-top: 0%;
+}*/

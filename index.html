@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="Your description goes here">
+	<meta name="keywords" content="one, two, three">
+
+	<title>La Morada Delivery</title>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<!-- font awesome -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<!-- jQuery -->
+	<script src="https://code.jquery.com/jquery-1.12.3.min.js" integrity="sha256-aaODHAgvwQW1bFOGXMeX+pC4PZIPsvn2h1sArYOhgXQ=" crossorigin="anonymous"></script>
+
+	<!-- Bootstrap JS -->
+	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+	<!-- Firebase CDN -->
+	<script src='https://cdn.firebase.com/js/client/2.4.1/firebase.js'></script>
+	<!-- js -->
+	<script src="app.js"></script>
+
+	<!-- external CSS link -->
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+</head>
+<body>
+
+<header>
+	<div id="barrowomen"></div>
+	<div id="signin">	<span>SIGN IN</span> </div>
+		<div id="logoimage"></div>
+		<h1>La Morada</h1>
+		<div id="mercadobag"></div>
+		<div id="CountMeal">	<span>MEALS</span> </div>
+</header>
+
+<!-- signin form -->
+<section class="signUP_form">
+	 <form>
+	<h3>Your Name</h3>
+	<label for="FirstName">First</label>
+	<input id="FirstName" type="text" placeholder="First Name"></input>
+	<label for="LastName">Last</label>
+	<input id="LastName" type="text" placeholder="Last Name"></input>
+<h3>Contact Info</h3>
+	<label for="Email">Email</label>
+	<input id="Email" type="email" placeholder="Email"></input>
+	<label for="Phone">Phone</label>
+	<input id="Phone" type="tel"></input>
+	<h3>password</h3>
+	<span id="passwordinfo"> Your pasword must have 8 or more
+		characters, including at least two or more of
+		 the following: lowercase letters, uppercase
+		letters, and special characters.</span>
+	<label for="Password">Password</label>
+	<input id="Password" type="text" placeholder="Password"></input>
+	<label for="RePassword">Re-Type Password</label>
+	<input id="RePassword" type="text" placeholder="Re-Type Password"></input>
+	<button id="createaccount">CREATE ACCOUNT</button>
+	<span id="policy"> By creating this account,<br>
+		I agree to La Morada's Policy.</span>
+	</form>
+</section>
+
+		<form class="contactInfo">
+			<section class="deliveryintro">
+
+			<label for="deliveryOption">Delivery</label>
+			<input type="radio" id="deliveryOption" name="delivery" value="Delivery">
+			<label for="pickUpoption">Pick Up</label>
+			<input type="radio" id="pickUpoption" name="delivery" value="PickUp">
+			<span id="deliverydate">Delivery Date:</span>
+			<span id="deliverytime">Delivery Time:</span>
+		</section>
+
+<section id="pickupinfo">
+		<label for="deliveryAddress">Address</label>
+			<input id="deliveryAddress" type="text" placeholder="Address"></input>
+			<label for="zipCode">Zip-Code</label>
+			<input type="Post-code" placeholder="Zip-Code"></input>
+</section>
+			<div class="Deliveryorder">
+				<h4>Iteams:</h4>
+				<button id="menubutton">Menu Options</button>
+			</div>
+
+
+			<section class="extraoptions">
+				<label for="sourcreamb">Sour Cream</label>
+				<input class="sourcreamb" type="checkbox" name="toppingsOrder"></input>
+				<label for="redsauceb">Red Sauce</label>
+				<input class="redsauceb" type="checkbox" name="toppingsOrder"></input>
+				<label for="greensauceb">Green Sauce</label>
+				<input class="greensauceb" type="checkbox" name="toppingsOrder"></input>
+			</section>
+
+			<section>
+				<button id="review-button">Review</button>
+				<button id="submit-button">Submit</button>
+				<button id="coment-button">Additional Inquiries</button>
+
+			</section>
+
+		</form>
+	</section>
+
+
+<!-- /******************************************
+/* quesadillas
+/*******************************************/ -->
+
+<section class="completesection">
+
+	<section class="headline">
+		<h2 id="quesadillaHeadline">Quesadillas</h2>
+		<button id="subtract" type="submit">-</button>
+		<div id=quantity contentEditable=true data-text="1"></div>
+		<button id="add" type="submit">+</button>
+	</section>
+
+	<form class="quesadillaMenu">
+		<div id="order1">
+
+			<h3>Please Select Tortilla Type:</h3>
+			<label for="tortilla">Flour</label>
+			<input class="tortilla-flour" type="radio" name= "quesadillaOrder"></input>
+			<label for="tortilla">Corn</label>
+			<input class="tortilla-corn" type="radio" name= "quesadillaOrder"></input>
+			<h3>Please Select Protein:</h3>
+			<label for="steak">Bistec Steak</label>
+			<input class="steak" type="checkbox" name="meatOrder"></input>
+
+			<label for="pork">Carnitas Pork</label>
+			<input class="pork" type="checkbox" name="meatOrder"></input>
+
+			<label for="enchilada">Echilada Pork</label>
+			<input class="enchilada" type="checkbox" name="meatOrder"></input>
+
+			<label for="chorizo">Chorizo Sausage</label>
+			<input class="chorizo" type="checkbox" name="meatOrder"></input>
+
+			<label for="vegetables">Grill Veggies</label>
+			<input class="vegetables" type="checkbox" name="meatOrder"></input>
+
+			<label for="hongos">Hongos Mushrooms</label>
+			<input class="hongos" type="checkbox" name="meatOrder"></input> -->
+			<!--followind inputs uses three lines in users view  -->
+			 <label for="cecina">Cecina Skirt Steak</label>
+			<input class="cecina" type="checkbox" name="meatOrder"></input>
+
+			<label for="chicken">Pollo Chicken Asado</label>
+			<input class="chicken" type="checkbox" name="meatOrder"></input>
+
+			<label for="alpastor">Al Pastor Pork</label>
+			<input class="alpastor" type="checkbox" name="meatOrder"></input>
+
+		</div>
+
+		<span id=totalPrice>Total=  $</span>
+		<span id="calculatedPrice"></span>
+		<input id="submit" type="Submit" value="Submit">
+	</form>
+</section>
+
+
+<!-- /******************************************
+/* burritos
+/*******************************************/ -->
+<section	class="completesectionB">
+
+	<section class="headlineb">
+		<h2 id="burritoHeadline">Burritos</h2>
+		<button id="subtractb" type="submitb">-</button>
+		<div id=quantityb contentEditable=true data-text="0"></div>
+		<button id="addb" type="submitb">+</button>
+	</section>
+	<form class="burritoMenu">
+		<div id="order1B">
+
+			<h3>Please Select Protein:</h3>
+
+			<label for="steakb">Bistec Steak</label>
+			<input classs="steakb" type="checkbox" name="meatOrder"></input>
+
+			<label for="Porkb">Carnitas Pork</label>
+			<input class="porkb" type="checkbox" name="meatOrder"></input>
+
+			<label for="enchiladab">Echilada Pork</label>
+			<input class="enchiladab" type="checkbox" name="meatOrder"></input>
+
+			<label for="chorizob">Chorizo Sausage</label>
+			<input class="chorizob" type="checkbox" name="meatOrder"></input>
+
+			<label for="vegetablesb">Grill Veggies</label>
+			<input class="vegetablesb" type="checkbox" name="meatOrder"></input>
+
+			<label for="hongosb">Hongos Mushrooms</label>
+			<input class="hongosb" type="checkbox" name="meatOrder"></input> -->
+			<!--followind inputs uses three lines in users view  -->
+			 <label for="cecinab">Cecina Skirt Steak</label>
+			<input class="cecinab" type="checkbox" name="meatOrder"></input>
+
+			<label for="chickenb">Pollo Chicken Asado</label>
+			<input class="chickenb" type="checkbox" name="meatOrder"></input>
+
+			<label for="alpastorb">Al Pastor Pork</label>
+			<input class="alpastorb" type="checkbox" name="meatOrder"></input>
+
+			<!--toppings selection  -->
+			<h3>Please Select Toppings:</h3>
+
+			<label for="lettuceb">Lettuce</label>
+			<input class="lettuceb" type="checkbox" name="toppingsOrder"></input>
+
+			<label for="tomatoesb">Tomatoes</label>
+			<input class="tomatoesb" type="checkbox" name="toppingsOrder"></input>
+
+			<label for="beansb">Beans</label>
+			<input class="beansb" type="checkbox" name="toppingsOrder"></input>
+
+			<!--uses two lines in users side  -->
+			<label for="mexicanriceb">Mexican Rice</label>
+			<input class="mexicanriceb" type="checkbox" name="toppingsOrder"></input>
+
+			<label for="mozarellaCheeseb">Mozarella Cheese</label>
+			<input class="mozarellaCheeseb" type="checkbox" name="toppingsOrder"></input>
+
+			<label for="cotijaCheseb">Cotija Cheese</label>
+			<input class="cotijaCheseb" type="checkbox" name="toppingsOrder"></input>
+
+			<label for="sourcreamb">Sour Cream</label>
+			<input class="sourcreamb" type="checkbox" name="toppingsOrder"></input>
+
+		</div>
+
+		<span id=totalPriceb>Total=  $</span>
+		<span id="calculatedPriceb"></span>
+		<input id="submitb" type="Submit" value="Submit">
+	</form>
+</section>
+
+
+<!-- /******************************************
+/* Tacos
+/*******************************************/ -->
+<section	class="completesectionT">
+	<section class="headlineb">
+		<h2 id="tacosHeadline">Tacos</h2>
+		<button id="subtract" type="submit">-</button>
+		<div id=quantityt contentEditable=true data-text="0"></div>
+		<button id="addt" type="submit">+</button>
+	</section>
+	<form class="tacosMenu">
+
+		<div id="order1T">
+
+			<h3>Please Select Protein:</h3>
+
+			<label for="Steakb">Bistec Steak</label>
+			<input classs="selectSteakb" type="checkbox" name="meatOrder"></input>
+
+			<label for="Porkb">Carnitas Pork</label>
+			<input class="selectPorkb" type="checkbox" name="meatOrder"></input>
+
+			<label for="enchiladab">Echilada Pork</label>
+			<input class="enchiladab" type="checkbox" name="meatOrder"></input>
+
+			<label for="Chorizob">Chorizo Sausage</label>
+			<input class="Chorizob" type="checkbox" name="meatOrder"></input>
+
+			<label for="vegetablesb">Grill Veggies</label>
+			<input class="vegetablesb" type="checkbox" name="meatOrder"></input>
+
+			<label for="hongosb">Hongos Mushrooms</label>
+			<input class="hongosb" type="checkbox" name="meatOrder"></input>
+			<!--followind inputs uses three lines in users view  -->
+			<label for="cecinab">Cecina Skirt Steak</label>
+			<input class="cecinab" type="checkbox" name="meatOrder"></input>
+
+			<label for="Chickenb">Pollo Chicken Asado</label>
+			<input class="selectChickenb" type="checkbox" name="meatOrder"></input>
+
+			<label for="alpastorb">Al Pastor Pork</label>
+			<input class="alpastorb" type="checkbox" name="meatOrder"></input>
+
+
+			<h3>Please Select Toppings:</h3>
+			<label for="cilantrot">Cilantro</label>
+			<input id="cilantrot" type="radio" name="toppingsOrder"></input>
+			<label for="oniont">Onion</label>
+			<input id="oniont" type="radio" name="toppingsOrder"></input>
+			<label for="lettucet">Lettuce</label>
+			<input id="lettucet" type="checkbox" name="toppingsOrder"></input>
+			<label for="tomatoest">Tomatoes</label>
+			<input id="tomatoest" type="checkbox" name="toppingsOrder"></input>
+		</div>
+
+		<span id=totalPricet>Total=  $</span>
+		<span id="calculatedPricet"></span>
+		<input id="submitt" type="Submit" value="Submit">
+	</form>
+</section>
+<!-- /******************************************
+/* Nachos
+/*******************************************/ -->
+<section	class="completesectionn">
+	<section class="headlinen">
+		<h2 id="nachosHeadline">Nachos</h2>
+		<button id="subtractn" type="submit">-</button>
+		<div id=quantityn contentEditable=true data-text="0"></div>
+		<button id="addn" type="submit">+</button>
+	</section>
+	<form class="nachoMenu">
+		<div id="order1N">
+			<h3>Please Select Protein:</h3>
+			<label for="Steakn">Bistec Steak</label>
+			<input classs="selectSteakn" type="checkbox" name="meatOrder"></input>
+
+			<label for="Porkn">Carnitas Pork</label>
+			<input class="selectPorkn" type="checkbox" name="meatOrder"></input>
+
+			<label for="enchiladn">Echilada Pork</label>
+			<input class="enchiladan" type="checkbox" name="meatOrder"></input>
+
+			<label for="Chorizon">Chorizo Sausage</label>
+			<input class="Chorizon" type="checkbox" name="meatOrder"></input>
+
+			<label for="vegetablesn">Grill Veggies</label>
+			<input class="vegetablesn" type="checkbox" name="meatOrder"></input>
+
+			<label for="hongosn">Hongos Mushrooms</label>
+			<input class="hongosn" type="checkbox" name="meatOrder"></input>
+			<!--followind inputs uses three lines in users view  -->
+			<label for="cecinan">Cecina Skirt Steak</label>
+			<input class="cecinan" type="checkbox" name="meatOrder"></input>
+
+			<label for="Chickenn">Pollo Chicken Asado</label>
+			<input class="selectChickenn" type="checkbox" name="meatOrder"></input>
+
+			<label for="alpastorn">Al Pastor Pork</label>
+			<input class="alpastorn" type="checkbox" name="meatOrder"></input>
+
+			<!--toppings selection  -->
+
+			<h3>Please Select Toppings:</h3>
+			<label for="lettucen">Lettuce</label>
+			<input class="lettucen" type="checkbox" name="toppingsOrder"></input>
+
+			<label for="tomatoesn">Tomatoes</label>
+			<input class="tomatoesn" type="checkbox" name="toppingsOrder"></input>
+
+			<label for="beansn">Beans</label>
+			<input class="beansn" type="checkbox" name="toppingsOrder"></input>
+
+			<label for="mozarellaCheesen">Mozarella Cheese</label>
+			<input class="mozarellaCheesen" type="checkbox" name="toppingsOrder"></input>
+
+			<label for="cotijaChesen">Cotija Cheese</label>
+			<input class="cotijaChesen" type="checkbox" name="toppingsOrder"></input>
+
+			<label for="sourcreamn">Sour Cream</label>
+			<input class="sourcreamn" type="checkbox" name="toppingsOrder"></input>
+
+
+			<span id=totalPricen>Total=  $</span>
+			<span id="calculatedPricen"></span>
+			<input id="submitn" type="Submit" value="Place Order">
+		</form>
+	</section>
+	<!--
+	/******************************************
+	/* Drinks
+	/*******************************************/ -->
+<section	class="completesectiond">
+
+		<h2 id="drinksHeadline">Drinks</h2>
+		<button id="addd" type="submit">+</button>
+		<div id=quantityd contentEditable=true data-text="0"></div>
+		<button id="subtractd" type="submit">-</button>
+		<form class="drinksMenu">
+			<div id="order1D">
+				<h3>Please Select Drink:</h3>
+				<h4>Homemade Juice</h4>
+				<label for="horchata">Horchata</label>
+				<input id="horchata" type="checkbox" name="homemadeJuice"></input>
+				<label for="Limonada">Limonada</label>
+				<input id="Limonada" type="checkbox" name="homemadeJuice"></input>
+				<label for="Jamaica">Jamaica</label>
+				<input id="Jamaica" type="checkbox" name="homemadeJuice"></input>
+				<label for="Maracuya">Maracuya</label>
+				<input id="Maracuya" type="checkbox" name="homemadeJuice"></input>
+				<label for="Tamarindo">Tamarindo</label>
+				<input id="Tamarindo" type="checkbox" name="homemadeJuice"></input>
+
+				<h4>Bottle Sodas</h4>
+				<label for="coke">Coke</label>
+				<input id="coke" type="checkbox" name="bottlesodas"></input>
+				<label for="cidral">Cidral</label>
+				<input id="cidral" type="checkbox" name="bottlesodas"></input>
+				<label for="sangria">Sangria</label>
+				<input id="sangria" type="checkbox" name="bottlesodas"></input>
+				<label for="squirt">Squirt</label>
+				<input id="squirt" type="checkbox" name="bottlesodas"></input>
+				<label for="pina">Pina</label>
+				<input id="pina" type="checkbox" name="bottlesodas"></input>
+				<label for="mandarina">Mandarina</label>
+				<input id="Mandarina" type="checkbox" name="bottlesodas"></input>
+
+				<h4>Can Sodas</h4>
+				<label for="pepsi">Pepsi</label>
+				<input id="pepsi" type="checkbox" name="meatOrder"></input>
+				<label for="sprite">Sprite</label>
+				<input id="sprite" type="checkbox" name="meatOrder"></input>
+				<label for="ginger">Ginger Aile</label>
+				<input id="ginger" type="checkbox" name="meatOrder"></input>
+			</div>
+
+			<span id=totalPriced>Total=  $</span>
+			<span id="calculatedPriced"></span>
+			<input id="submitd" type="Submit" value="Place Order">
+		</form>
+	</section>
+
+
+
+	<script src="https://www.gstatic.com/firebasejs/4.6.2/firebase.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+
+
+</body>
+</html>
